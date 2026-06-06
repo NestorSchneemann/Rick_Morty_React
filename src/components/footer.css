@@ -1,0 +1,14 @@
+.footer {
+    background: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 0;
+}
+
+.footer li {
+    list-style: none;
+    color: rgb(228, 206, 248);
+    text-decoration: underline;
+}

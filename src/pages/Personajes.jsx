@@ -4,7 +4,7 @@ import "./Personajes.css";
 
 function Personaje(){
     
-    const personaje = usePersonaje(4);
+    const personaje = usePersonaje(349);
     
     if (!personaje){
         return <h2>Cargando...</h2>
@@ -13,25 +13,49 @@ function Personaje(){
     return(
         
         <div className="contenedor">
-            <div className="personaje1">
-                <img
-                src={personaje.image}
-                alt={personaje.name}
-                />
+            <div className="fila">
+                <div className="personaje">
+                    <img
+                    src={personaje.image}
+                    alt={personaje.name}
+                    />
 
-                <h2>{personaje.name}</h2>
-                <p>{personaje.status}</p>
-                <p>{personaje.origin.name}</p>
+                    <h2>{personaje.name}</h2>
+                    <p>{personaje.status}</p>
+                    <p>{personaje.origin.name}</p>
+                </div>
+                <div className="personaje">
+                    <img
+                    src={personaje.image}
+                    alt={personaje.name}
+                    />
+
+                    <h2>{personaje.name}</h2>
+                    <p>{personaje.status}</p>
+                    <p>{personaje.origin.name}</p>
+                </div>
             </div>
-            <div className="personaje2">
-                <img
-                src={personaje.image}
-                alt={personaje.name}
-                />
+            <div className="fila">
+                <div className="personaje">
+                    <img
+                    src={personaje.image}
+                    alt={personaje.name}
+                    />
 
-                <h2>{personaje.name}</h2>
-                <p>{personaje.status}</p>
-                <p>{personaje.origin.name}</p>
+                    <h2>{personaje.name}</h2>
+                    <p>{personaje.status}</p>
+                    <p>{personaje.origin.name}</p>
+                </div>
+                <div className="personaje">
+                    <img
+                    src={personaje.image}
+                    alt={personaje.name}
+                    />
+
+                    <h2>{personaje.name}</h2>
+                    <p>{personaje.status}</p>
+                    <p>{personaje.origin.name}</p>
+                </div>
             </div>
         </div>
     );
