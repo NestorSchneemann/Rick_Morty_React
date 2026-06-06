@@ -5,13 +5,13 @@ function Footer(){
     return(
         <ul className="footer">
             <li>
-                <Link to='/'>Home</Link>
+                <Link className="footlink" to='/'>Volver al Inicio</Link>
             </li>
             <li>
-                <Link to='/quienes_somos'>Quienes somos</Link>
+                <Link className="footlink" to='/quienes_somos'>About us</Link>
             </li>
             <li>
-                <Link to='/formulario'>Contáctanos</Link>
+                <Link className="footlink" to='/formulario'>Contáctanos</Link>
             </li>
             <li>
                 <a href="/">Términos y Condiciones</a>

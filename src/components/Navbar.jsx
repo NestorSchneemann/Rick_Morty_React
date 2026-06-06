@@ -4,10 +4,10 @@ import "./Navbar.css"
 function Navbar(){
     return(
         <nav ClassName='navbar'>
-            <Link to='/'>Home</Link>
-            <Link to='/quienes_somos'>Quienes somos</Link>
-            <Link to='/formulario'>Formulario</Link>
-            <Link to='/personaje'>Personajes</Link>
+            <Link className='navlink' to='/'>Home</Link>
+            <Link className='navlink' to='/quienes_somos'>Quienes somos</Link>
+            <Link className='navlink' to='/formulario'>Formulario</Link>
+            <Link className='navlink' to='/personaje'>Personajes</Link>
             
         </nav>
     )

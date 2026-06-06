@@ -10,5 +10,13 @@
 .footer li {
     list-style: none;
     color: rgb(228, 206, 248);
-    text-decoration: underline;
+}
+
+.footer li .footlink {
+    text-decoration: none;
+}
+
+.footer li a {
+    text-decoration: none;
+    color: rgb(228, 206, 248);
 }
