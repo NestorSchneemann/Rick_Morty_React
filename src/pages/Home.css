@@ -1,0 +1,29 @@
+.home{
+    text-align: center;
+    padding: 40px;
+}
+
+.home h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: rgb(255, 0, 47);
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.home h1:hover {
+    color: orange;
+}
+
+.home p{
+    color: black;
+}
+
+.home .contenido{
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 0 12px white;
+}

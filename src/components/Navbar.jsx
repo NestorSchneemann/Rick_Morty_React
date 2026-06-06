@@ -1,0 +1,16 @@
+import { Link } from "react-router-dom";
+import "./Navbar.css"
+
+function Navbar(){
+    return(
+        <nav ClassName='navbar'>
+            <Link to='/'>Home</Link>
+            <Link to='/quienes_somos'>Quienes somos</Link>
+            <Link to='/formulario'>Formulario</Link>
+            <Link to='/personaje'>Personajes</Link>
+            
+        </nav>
+    )
+}
+
+export default Navbar;

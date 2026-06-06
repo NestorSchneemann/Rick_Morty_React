@@ -1,0 +1,9 @@
+h1 {
+    color: white;
+}
+
+.contenedor {
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,26 @@
+.quienes {
+    color: black;
+    margin: 70px;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.presentacion {
+    background: rgba(255, 255, 255, 0.559);
+    color: black;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.relleno {
+    color: black;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.remate {
+    background: rgba(255, 255, 255, 0.559);
+    color: black;
+    padding: 30px;
+    font-size: 30px;
+}
