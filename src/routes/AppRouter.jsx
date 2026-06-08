@@ -10,13 +10,13 @@ function AppRouter(){
     return(
         <BrowserRouter>
         <Navbar />
-            <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/quienes_somos' element={<Quienes_somos />} />
-                <Route path="/formulario" element={<Formulario />} />
-                <Route path="/personaje" element={<Personaje />} />
-                
-            </Routes>
+        <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/quienes_somos' element={<Quienes_somos />} />
+            <Route path="/formulario" element={<Formulario />} />
+            <Route path="/personaje" element={<Personaje />} />
+            
+        </Routes>
         <Footer />
         </BrowserRouter>
     )

@@ -1,17 +1,24 @@
 nav {
-    background-color: rgba(70, 45, 153, 0.849);
+    /*background-color: rgba(70, 45, 153, 0.849);*/
+    background: rgba(15,23,42,0.6);
     height: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 30px;
+    font-size: larger;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 10001;
 }
 
 nav .navlink {
     text-decoration: none;
     font-weight: bold;
+    color: white;
 }
 
-nav Link:hover {
-    color: white;
-    text-decoration: underline;
+nav .navlink:hover {
+    color: cyan;
 }
