@@ -8,6 +8,7 @@ function Navbar(){
             <Link className='navlink' to='/quienes_somos'>Quienes somos</Link>
             <Link className='navlink' to='/formulario'>Formulario</Link>
             <Link className='navlink' to='/personaje'>Personajes</Link>
+            <Link className='navlink' to='/registros'>Registros</Link>
             
         </nav>
     )
