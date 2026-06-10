@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 
-function usePersonaje(id){
+function usePersonaje(ids){
 
     const [personaje, setPersonaje] = useState(null);
 
@@ -9,17 +9,17 @@ function usePersonaje(id){
 
         const obtenerPersonaje = async () => {
 
-            const respuesta = await fetch(`https://rickandmortyapi.com/api/character/${id}`);
+            const respuesta = await fetch(`https://rickandmortyapi.com/api/character/${ids.join(",")}`);
 
             const data = await respuesta.json();
 
-            setPersonaje(data);
+            setPersonaje(Array.isArray(data) ? data : [data]);
 
         };
 
         obtenerPersonaje();
 
-    }, [id]);
+    }, [ids]);
 
     return personaje;
 

@@ -4,7 +4,7 @@ import "./Personajes.css";
 
 function Personaje(){
     
-    const personaje = usePersonaje(349);
+    const personaje = usePersonaje([1, 2, 3, 4, 5, 6, 7, 8]);
     
     if (!personaje){
         return <h2>Cargando...</h2>
@@ -13,50 +13,17 @@ function Personaje(){
     return(
         
         <div className="contenedor">
-            <div className="fila">
-                <div className="personaje">
-                    <img
-                    src={personaje.image}
-                    alt={personaje.name}
-                    />
+            {personaje.map((pj)=>(
+                <div key={personaje.id}>
 
-                    <h2>{personaje.name}</h2>
-                    <p>{personaje.status}</p>
-                    <p>{personaje.origin.name}</p>
+                    <img src={pj.image} alt={pj.name} />
+                    <h2>Nombre: {pj.name}</h2>
+                    <ul>
+                        <li><b>Estado:</b> {pj.status}</li>
+                        <li><b>Origen:</b> {pj.origin.name}</li>
+                    </ul>
                 </div>
-                <div className="personaje">
-                    <img
-                    src={personaje.image}
-                    alt={personaje.name}
-                    />
-
-                    <h2>{personaje.name}</h2>
-                    <p>{personaje.status}</p>
-                    <p>{personaje.origin.name}</p>
-                </div>
-            </div>
-            <div className="fila">
-                <div className="personaje">
-                    <img
-                    src={personaje.image}
-                    alt={personaje.name}
-                    />
-
-                    <h2>{personaje.name}</h2>
-                    <p>{personaje.status}</p>
-                    <p>{personaje.origin.name}</p>
-                </div>
-                <div className="personaje">
-                    <img
-                    src={personaje.image}
-                    alt={personaje.name}
-                    />
-
-                    <h2>{personaje.name}</h2>
-                    <p>{personaje.status}</p>
-                    <p>{personaje.origin.name}</p>
-                </div>
-            </div>
+            ))}
         </div>
     );
 }
