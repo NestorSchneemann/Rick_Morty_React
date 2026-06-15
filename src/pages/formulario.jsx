@@ -61,29 +61,29 @@ function Formulario() {
                     required
                 />
                 <input
-                name="edad"
-                value={form.edad}
-                onChange={handleChange}
-                type="number"
-                placeholder="Edad"
-                min="0" // Evita valores negativos
+                    name="edad"
+                    value={form.edad}
+                    onChange={handleChange}
+                    type="number"
+                    placeholder="Edad"
+                    min="0" // Evita valores negativos
                 />
                 <input
-                name="peso"
-                value={form.peso}
-                onChange={handleChange}
-                type="number"
-                placeholder="Peso (Kg)"
-                min="0" // Evita valores negativos
-                step="any" // Permite decimales
+                    name="peso"
+                    value={form.peso}
+                    onChange={handleChange}
+                    type="number"
+                    placeholder="Peso (Kg)"
+                    min="0" // Evita valores negativos
+                    step="any" // Permite decimales
                 />
                 <input
-                name="genero"
-                value={form.genero}
-                onChange={handleChange}
-                type="text"
-                placeholder="Género (M/F)"
-                maxLength={1} // Limita a 1 caracter
+                    name="genero"
+                    value={form.genero}
+                    onChange={handleChange}
+                    type="text"
+                    placeholder="Género (M/F)"
+                    maxLength={1} // Limita a 1 caracter
                 />
 
                 <button type="submit" disabled={loading}> {/*boton de envío */}

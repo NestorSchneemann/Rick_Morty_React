@@ -1,4 +1,5 @@
 import useFormularios from "../hooks/useFormularios";
+import './Registros.css'
 
 function Registros(){
     const {list, loading, error} = useFormularios();
@@ -32,12 +33,12 @@ function Registros(){
                                 <tr key={item.id ?? index}>
                                     <td>{item.nombre}</td>
                                     <td>{item.apellido}</td>
-                                    <td>{item.correo}</td>
-                                    <td>{item.edad}</td>
-                                    <td>{item.peso}</td>
-                                    <td>{item.genero}</td>
+                                    <td>{item.email}</td>
+                                    <td className="columna_pequeña">{item.edad}</td>
+                                    <td className="columna_pequeña">{item.peso}</td>
+                                    <td className="columna_pequeña">{item.genero}</td>
                                 </tr>
-                            ))};
+                            ))}
                         </tbody>
                     </table>
                 ) : (
