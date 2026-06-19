@@ -35,7 +35,7 @@ function Formulario() {
         <div className="formulario">
             <h2>Regístrate</h2>
 
-            <form>
+            <form onSubmit={handleSubmit}>
                 <input
                     name="nombre"
                     value={form.nombre}
@@ -91,7 +91,7 @@ function Formulario() {
                 </button>
             </form>
 
-            {error && <p className="error"></p>} {/* Muestra mensaje de error si existe */}
+            {error && <p className="error">{error}</p>} {/* Muestra mensaje de error si existe */}
             {result && <p className="success">Formulario enviado. ID {result.id}</p>} {/* Muestra éxito si se recibió resultado */}
         </div>
     );

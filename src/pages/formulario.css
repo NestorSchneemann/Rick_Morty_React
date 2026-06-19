@@ -25,3 +25,19 @@ button {
     cursor: pointer;
     padding: 10px;
 }
+
+.error {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: red;
+    color: white;
+    font-size: 50px;
+}
+
+.success {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: green;
+    color: white;
+    font-size: 50px;
+}
