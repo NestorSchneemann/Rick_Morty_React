@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { login } from "../services/auth"
+import "./modal.css";
 
 
 function LoginModal({ onLogin, onClose }) {
@@ -24,38 +25,40 @@ function LoginModal({ onLogin, onClose }) {
     };
 
     return (
-        <div className="modal">
-            <form onSubmit={handleSubmit}>
-                <h3>Iniciar Sesión</h3>
+        <div className="overlay">
+            <div className="modal">
+                <form onSubmit={handleSubmit}>
+                    <h3>Iniciar Sesión</h3>
 
-                <input
-                    type="email"
-                    placeholder="Correo"
-                    value={email}
-                    onChange={(e) =>
-                        setEmail(e.target.value)
-                    }
-                />
+                    <input
+                        type="email"
+                        placeholder="Correo"
+                        value={email}
+                        onChange={(e) =>
+                            setEmail(e.target.value)
+                        }
+                    />
 
-                <input
-                    type="password"
-                    placeholder="Contraseña"
-                    value={password}
-                    onChange={(e) =>
-                        setPassword(e.target.value)
-                    }
-                />
+                    <input
+                        type="password"
+                        placeholder="Contraseña"
+                        value={password}
+                        onChange={(e) =>
+                            setPassword(e.target.value)
+                        }
+                    />
 
-                <button type="submit">
-                        Iniciar Sesión
-                </button>
+                    <button className="sesionModal" type="submit">
+                            Iniciar Sesión
+                    </button>
 
-                <button type="button"
-                    onClick={onClose}
-                >
-                    Cancelar
-                </button>
-            </form>
+                    <button className="sesionModal" type="button"
+                        onClick={onClose}
+                    >
+                        Cancelar
+                    </button>
+                </form>
+            </div>
         </div>
     )
 }

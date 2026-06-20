@@ -37,24 +37,24 @@ function Navbar() {
                 <Link className='navlink' to='/'>Home</Link>
                 <Link className='navlink' to='/quienes_somos'>Quienes somos</Link>
                 <Link className='navlink' to='/formulario'>Formulario</Link>
-                <Link className='navlink' to='/personaje'>Personajes</Link>
                 <Link className='navlink' to='/registros'>Registros</Link>
+                <Link className='navlink' to='/personaje'>Personajes</Link>
                 { user ? (
                     <>
-                        <span>
+                        <span className="saludo">
                             Hola {user.email}
                         </span>
 
-                        <button onClick={handleLogout}>
+                        <button className="sesion" onClick={handleLogout}>
                             Cerrar Sesión
                         </button>
                     </>
                     ) : (
-                        <button
+                        <button className="sesion"
                             onClick={() =>
                                 setShowLogin(true)
                             }>
-                                Inicial Sesión
+                                Iniciar Sesión
                         </button>
                     )
                 }
